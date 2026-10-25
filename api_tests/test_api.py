@@ -33,7 +33,7 @@ class TestSections:
         response = api_client.get_sections("agate_ivanovoobl")
         assert response.status_code == 200
         data = response.json()
-        assert len(data) == 11 # В ГИСОГД Ивановской области 10 разделов
+        assert len(data) == 11 # В ГИСОГД Ивановской области 11 разделов
 
 class TestZuSearch:
     def test_search_by_cadastral_prefix(self, api_client):
